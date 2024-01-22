@@ -171,7 +171,7 @@ hr {
 .filter-text:hover {
   color: var(--color-pink);
 }
-@media screen and (width <= 550px) {
+@media screen and (width <= 600px) {
   .brand-title {
     display: block;
     text-align: center;
