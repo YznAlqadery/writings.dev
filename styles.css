@@ -154,37 +154,43 @@ hr {
   .writing-container {
     margin: 0 auto;
     flex-basis: 80%;
+    text-align: center;
   }
   .writing-container img {
     display: block;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
   }
   .filter-container {
     margin: 1.5rem auto;
-  }
-  .writings-section {
-    padding: 0.6rem;
   }
 }
 .link-text:hover,
 .filter-text:hover {
   color: var(--color-pink);
 }
-@media screen and (width <= 600px) {
+
+@media screen and (width <= 550px) {
+  .writings-section {
+    padding: 0.6rem;
+  }
   .brand-title {
-    display: block;
+    margin: 0 auto;
     text-align: center;
   }
+  .logo {
+    width: 120px;
+  }
   .navbar {
-    display: block;
+    padding: 0.6rem;
+    flex-direction: column;
   }
   .logo {
     display: block;
     margin: 0 auto;
   }
   .header-container {
-    margin: 0 auto;
+    margin: 1rem auto;
   }
   .header-text {
     font-size: 2rem;
@@ -197,10 +203,13 @@ hr {
   }
   .navbar-nav {
     margin: 0 auto;
-    gap: 0.5rem;
-    justify-content: space-between;
+    gap: 1.5rem;
+    justify-content: space-evenly;
   }
   .navbar-nav li a {
     font-size: 0.8rem;
+  }
+  .writing-container {
+    flex-basis: 10%;
   }
 }
